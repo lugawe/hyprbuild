@@ -4,6 +4,8 @@
 
 set -e
 
+echo build hyprutils...
+
 git clone  --recursive https://github.com/hyprwm/hyprutils.git
 cd hyprutils
 

@@ -4,6 +4,8 @@
 
 set -e
 
+echo build hyprlang...
+
 git clone  --recursive https://github.com/hyprwm/hyprlang.git
 cd hyprlang
 

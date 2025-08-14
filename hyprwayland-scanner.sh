@@ -4,6 +4,8 @@
 
 set -e
 
+echo build hyprwayland-scanner...
+
 git clone --recursive https://github.com/hyprwm/hyprwayland-scanner.git
 cd hyprwayland-scanner
 

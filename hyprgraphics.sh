@@ -4,6 +4,8 @@
 
 set -e
 
+echo build hyprgraphics...
+
 git clone  --recursive https://github.com/hyprwm/hyprgraphics.git
 cd hyprgraphics
 

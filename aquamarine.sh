@@ -4,6 +4,7 @@
 
 set -e
 
+echo build aquamarine...
 
 git clone  --recursive https://github.com/hyprwm/aquamarine.git
 cd aquamarine

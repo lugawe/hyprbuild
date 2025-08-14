@@ -4,6 +4,8 @@
 
 set -e
 
+echo build hyprland...
+
 git clone --recursive https://github.com/hyprwm/Hyprland.git
 cd Hyprland
 

@@ -4,6 +4,8 @@
 
 set -e
 
+echo build hyprcursor...
+
 git clone  --recursive https://github.com/hyprwm/hyprcursor.git
 cd hyprcursor
 
