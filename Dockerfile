@@ -2,20 +2,26 @@ FROM gcc:trixie
 
 WORKDIR /build
 
-COPY . /build
+COPY dependencies.sh .
+RUN ./dependencies.sh
 
-RUN sh dependencies.sh
+COPY hyprwayland-scanner.sh .
+RUN ./hyprwayland-scanner.sh
 
-RUN sh hyprwayland-scanner.sh
+COPY hyprutils.sh .
+RUN ./hyprutils.sh
 
-RUN sh hyprutils.sh
+COPY aquamarine.sh .
+RUN ./aquamarine.sh
 
-RUN sh aquamarine.sh
+COPY hyprlang.sh .
+RUN ./hyprlang.sh
 
-RUN sh hyprlang.sh
+COPY hyprcursor.sh .
+RUN ./hyprcursor.sh
 
-RUN sh hyprcursor.sh
+COPY hyprgraphics.sh .
+RUN ./hyprgraphics.sh
 
-RUN sh hyprgraphics.sh
-
-RUN sh hyprland.sh
+COPY hyprland.sh .
+RUN ./hyprland.sh
